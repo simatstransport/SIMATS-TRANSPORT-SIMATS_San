@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SIMATS Transport - Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+    }
+
+    header {
+      background-color: #418bed;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .hamburger {
+      font-size: 26px;
+      background: none;
+      border: none;
+      color: white;
+    }
+
+    .contact-box {
+      background-color: white;
+      max-width: 320px;
+      margin: 60px auto;
+      padding: 20px 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.15);
+      border: 1px solid #ccc;
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-box h3 {
+      color: #418bed;
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .contact-box .form-group {
+      margin-bottom: 10px;
+    }
+
+    .contact-box label {
+      display: block;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .contact-box .details {
+      font-weight: bold;
+    }
+
+    .contact-box .help {
+      color: #655f69;
+    }
+
+    .new-req {
+      font-size: 13px;
+      text-align: center;
+      background-color: #4090f7;
+      color: white;
+      padding: 8px;
+      border-radius: 5px;
+      margin-top: 12px;
+    }
+
+    .bottom-nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #2196f3;
+      height: 60px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 100;
+    }
+    .bottom-nav a {
+      flex: 1;
+      text-align: center;
+    }
+    .bottom-nav img {
+      width: 26px;
+      height: 26px;
+    }
+    .home-wrapper {
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(136.42deg, #26CBFF 4.8%, #6980FD 99.39%);      padding: 12px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      border: 4px solid white;
+      z-index: 101;
+    }
+
+    
+
+    /* Sidebar Styles */
+    .offcanvas-start {
+      width: 75vw;
+      background-color: #fff;
+    }
+    .offcanvas-body a,
+    .offcanvas-body .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      text-decoration: none;
+      color: #333;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+    }
+    .offcanvas-body a img,
+    .offcanvas-body .dropdown-toggle img {
+      width: 20px;
+      margin-right: 10px;
+    }
+    .dropdown-menu {
+      display: none;
+      border: none;
+      padding-left: 30px;
+      background-color: #ffffff;
+      box-shadow: none;
+    }
+    .dropdown-menu a {
+      padding: 8px 0;
+      border-bottom: none;
+      font-size: 15px;
+      display: block;
+      color: #333;
+    }
+    #l{
+            font-family: "Markazi Text", serif;
+
+    }
+  </style>
+</head>
+
+<body>
+<div style="
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.5;
+  z-index: 0;
+  pointer-events: none;
+">
+  <img src="img/logo-all.png" alt="Watermark" style="width: 180px;">
+</div>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <img src="img/logo.png" alt="SIMATS Logo" />
+      <h1 id  = "l">SIMATS TRANSPORTS</h1>
+    </div>
+    <button class="hamburger" data-bs-toggle="offcanvas" data-bs-target="#sidebar">&#9776;</button>
+  </header>
+
+  <div class="contact-box">
+    <h3>Contact Details</h3>
+
+    <div class="form-group">
+      <label>Name: <span class="details">Mr.G.Jayabalan</span></label>
+    </div>
+    <div class="form-group">
+      <label>Contact Number: <span class="details">98416 52348</span></label>
+    </div>
+    <div class="form-group">
+      <label>Designation: <span class="details">Transport Manager</span></label>
+    </div>
+    <div class="form-group help">
+      <label>Transport Help Line 1: <span class="details">7824882758</span></label>
+    </div>
+    <div class="form-group help">
+      <label>Transport Help Line 2: <span class="details">7824882759</span></label>
+    </div>
+
+    <div class="new-req">
+      <strong>Any Transport Issues Contact</strong><br />
+      <b>transportmanager@saveetha.com</b>
+    </div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="profile.html"><img src="img/user-prof.png" alt="Profile"></a>
+    <div class="home-wrapper">
+      <a href="homepage.html"><img src="img/f5.png" alt="Home"></a>
+    </div>
+    <a href="notifications.html"><img src="img/f3.png" alt="Notifications"></a>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="dropdown w-100">
+        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" onclick="toggleDropdown()">
+          <img src="img/pass.jpeg" alt="Pass"> Pass Details
+        </a>
+        <ul class="dropdown-menu" id="passDropdown">
+          <li><a class="dropdown-item" href="payment.html" >Payment Status</a></li>
+        </ul>
+      </div>
+      <a href="raise.html"><img src="img/notification.png" alt="Raise Issue">Raise Issue</a>
+      <a href="attedance.html"><img src="img/attendance-info.png" alt="Attendance">Attendance</a>
+      <a href="contact.html"><img src="img/contact-icon.png" alt="Contact">Contact</a>
+      <a href="index.html"><img src="img/logout.png" alt="Logout">Logout</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById("passDropdown");
+      dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
